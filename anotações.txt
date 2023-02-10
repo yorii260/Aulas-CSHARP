@@ -1,0 +1,63 @@
+Anotações Curso C#
+
+[Básico]
+-----------------------------------------------------------------
+System: Biblioteca padrão do sistema. 
+-----------------------------------------------------------------
+class: conjunto de funçôes
+ex: class Program
+-----------------------------------------------------------------
+Console.Write/WriteLine: Imprime um valor 
+-----------------------------------------------------------------
+Console.ReadLine: Lê e retorna para a memória
+do computador o que foi escrito.
+-----------------------------------------------------------------
+Console.Clear: Limpa o terminal (prompt de comando).
+[Para não esquecer]
+
+-----------------------------------------------------------------
+char: Variável de caractere, apenas suporta 1 letra.
+string: Variável de texto padrão.
+int: Variável de números inteiross. (0-10)
+float: Variável de números decimais.
+bool: Variável de condição, true or false.
+-----------------------------------------------------------------
++: Soma
+-: Subtração
+*: Multiplicação
+/: Divisão
+>: Maior que
+<: Menor que
+!=: Diferente de 
+>>: Retorna o valor dobrado.
+<<: Retorna o valor pela metade.
+>=: Maior ou igual
+<=: Menor ou igual 
+==: Igual
+=: Atribuição 
++=(valor) = Atribuí um valor X á uma Variável ex: num+=10.
+(-=, *=, /=)
+-----------------------------------------------------------------
+switch (teste) {bloco}: Realiza um teste utilizando cases.
+goto: Desvia para um lugar determinado pelo progamador, e executa a partir de onde o label foi indicado.
+ex: label seria isso: ini:
+If(expressão){bloco}: Realiza uma expressão lógica e caso for True,
+ele irá realizar os comandos do seu bloco {}.
+else{}: Caso o bloco If retorne false, executa este bloco.
+[]: Array/Vetor (Array Unidimensional.)
+[,]: Array/Vetor (Array Bidimensional.)
+for(E1; E2; E3){bloco} - Laço de repetição (Expressão Lógica) ex: int num=0;
+E1: Variável que indica o inicio da repetição/loop (Quantidade de vezes que desejo repetir).
+E2: Definição do número de vezes que irá repetir. (Expressão Lógica que, enquanto retornar True, o loop continuará executando) ex: num<10.
+E3: Incremento/Decremento do contador (No caso, a opção E1) ex: num++, num+=10.
+while(e1){bloco}: Realiza uma expressão lógica, enquanto o indíce e1 retornar True, irá repetir o seu escopo de comandos.
+do while: Garante que pelo menos os comandos sejam executados uma vez, primeiro executa e depois testa.
+
+-----------------------------------------------------------------
+
+[Operações de cast]
+
+char.Parse(index): Converte para char.
+int.Parse(index): Converte para int.
+Conversion.To...
+(int)valor [typecast]
