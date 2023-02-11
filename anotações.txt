@@ -24,6 +24,7 @@ float: Variável de números decimais.
 bool: Variável de condição, true or false.
 -----------------------------------------------------------------
 +: Soma
+%: Retorna o resto da divisão.
 -: Subtração
 *: Multiplicação
 /: Divisão
@@ -96,3 +97,5 @@ Array.GetLongLenght(): Retorna a quantidade de elementos da array.
 
 
 Void: Metódo que não retorna nenhum valor.
+ref: Passagem por referência. (Usa o endereço de memória da variavel que foi passada como argumento, então efetivamente altera o seu valor.)
+out: Permite que o Metódo retorne mais de um valor de saída.

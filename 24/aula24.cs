@@ -10,11 +10,11 @@ namespace Curso{
                 i++
             )
             {
-                somar(20,22);
+                Console.WriteLine(somar(20,22));
             }    
         }
-        static void somar(int i, int y){
-            Console.WriteLine("A soma de {0}+{1}: {2}",i,y,i+y);
+        static int somar(int i, int y){
+            return i+y;
         }
     }
 }
