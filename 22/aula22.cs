@@ -2,11 +2,13 @@ using System;
 
 namespace Curso 
 {
-    class Aula21 
+    class Aula22
     {
         public static void Main() 
         {
-           // AUla sobre loops.
+            int[] i = new int[3]{1,2,3};
+
+            
         }
     }
 }
