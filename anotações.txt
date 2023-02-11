@@ -13,9 +13,10 @@ Console.ReadLine: Lê e retorna para a memória
 do computador o que foi escrito.
 -----------------------------------------------------------------
 Console.Clear: Limpa o terminal (prompt de comando).
+-----------------------------------------------------------------
+
 [Para não esquecer]
 
------------------------------------------------------------------
 char: Variável de caractere, apenas suporta 1 letra.
 string: Variável de texto padrão.
 int: Variável de números inteiross. (0-10)
@@ -52,12 +53,41 @@ E2: Definição do número de vezes que irá repetir. (Expressão Lógica que, e
 E3: Incremento/Decremento do contador (No caso, a opção E1) ex: num++, num+=10.
 while(e1){bloco}: Realiza uma expressão lógica, enquanto o indíce e1 retornar True, irá repetir o seu escopo de comandos.
 do while: Garante que pelo menos os comandos sejam executados uma vez, primeiro executa e depois testa.
+forEach(I1){}: Loop própio para realizar iterações em uma determinada coleção.
+I1: Variável utillizada para receber cada elemento da coleção.
+-----------------------------------------------------------------
 
+[Tipos de Variável]
+
+string: Conjunto de caracteres liberais.
+int: Números reais.
+float: Números decimais.
+bool: Váriavel de duplo retorno (true/false).
+object: Objeto.
+double:
 -----------------------------------------------------------------
 
 [Operações de cast]
 
 char.Parse(index): Converte para char.
 int.Parse(index): Converte para int.
+float.Parse(index): Converte para float.
 Conversion.To...
 (int)valor [typecast]
+-----------------------------------------------------------------
+
+[Métodos com Arrays]
+
+
+Array.GetUpperBound(índice): Método que retorna o maior índice da Array/Vetor.
+Array.GetLowerBound(índice): Método que retorna o menor índice da Array/Vetor.
+Array.GetValue(posição): Retorna o valor da posição específicada em "posição".
+Array.IndexOf(array, value): Realiza uma pesquisa no "array" e  retorna a posição do primeiro valor encontrado.
+Array.LastIndexOf(array, value): Mesma coisa do IndexOf, porém retorna a posição do último valor encontrado.
+Array.Reverse(array): Inverte os elementos da "array" específicada.
+Array.SetValue(obj value, long pos): Definir um valor em uma posição do Array/Vetor.
+Array.Sort(array): Ordena os objetos da array em ordem crescente.
+Array.BinarySearch(array, valor): Realiza uma busca de um valor X dentro do array.
+Array.Copy(array_de_origem, array_de_destino): Realiza uma cópia dos elementos de uma array para outra.
+Array.CopyTo(array_de_destino, pos): Realiza uma cópia de uma array para outra a partir de uma determinada posição da mesma.
+Array.GetLongLenght(): Retorna a quantidade de elementos da array.
