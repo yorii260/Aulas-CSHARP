@@ -95,7 +95,25 @@ Array.GetLongLenght(): Retorna a quantidade de elementos da array.
 
 [Metódos] - Conjunto de instruções que pode ser invocado a qualquer momento.
 
-
 Void: Metódo que não retorna nenhum valor.
 ref: Passagem por referência. (Usa o endereço de memória da variavel que foi passada como argumento, então efetivamente altera o seu valor.)
 out: Permite que o Metódo retorne mais de um valor de saída.
+params: Array que torna possível passar qualquer quantidade de valores a um Metódo, sem ter que indocar um por um.
+
+[Classes]
+class: Tipo de dado composto por membros, por sua vez, seus membros são propiedades que são as variáveis da classe e metódos que são as funções, são as funcionalidades da classe.
+
+[Modificador de Classe]
+public: Pública, sem restrição de visualização.
+abstract: Class-Base para outras classes, não podem ser instanciados  objetos desta classe.
+sealed: Classe não pode ser herdada.
+static: Classe não permite a instanciação de objetos e seus membros devem ser static.
+
+[Especificador de Acesso]
+public: Sem restrição de acesso.
+private: Só podem ser acessado pela própia classe.
+protected: Podem ser acessados na própia classe e nas classes derivadas.
+abstract: Os metódos não tem implementação somente os cabeçalhos
+sealed: O metódo não pode ser redefinido.
+virtual: O metódo pode ser redefinido em uma classe derivada.
+static: O metódo pode ser chamado mesmo sem a instanciação de um objeto.
