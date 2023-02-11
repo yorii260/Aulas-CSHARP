@@ -4,8 +4,16 @@ namespace Curso
 {
     public class Jogador{
 
-        public int energia=100;
-        public bool vivo=true;
+        public int energia;
+        public bool vivo;
+        public string nome;
+
+
+        public Jogador(string n){
+            energia=100;
+            vivo=false;
+            nome=n;
+        }
 
         public void Energia(){
             if(vivo==false){energia=0;}
@@ -21,14 +29,18 @@ namespace Curso
 
             Console.WriteLine("O jogador está  {0}.", v);
         }
+        public void Nome(){
+            Console.WriteLine("Nome do jogador: {0}",nome);
+        }
 
 
     }
-    class Aula28{
+    class Aula30{
         static void Main(){
-            Jogador j1 = new Jogador();
+            Jogador j1 = new Jogador("Bruno");
             j1.Vivo();
             j1.Energia();
+            j1.Nome();
         }
 
 

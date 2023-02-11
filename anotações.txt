@@ -39,6 +39,7 @@ bool: Variável de condição, true or false.
 =: Atribuição 
 +=(valor) = Atribuí um valor X á uma Variável ex: num+=10.
 (-=, *=, /=)
+this: Faz referência ao objeto, no caso a classe/metódo.
 -----------------------------------------------------------------
 switch (teste) {bloco}: Realiza um teste utilizando cases.
 goto: Desvia para um lugar determinado pelo progamador, e executa a partir de onde o label foi indicado.
@@ -103,7 +104,9 @@ params: Array que torna possível passar qualquer quantidade de valores a um Met
 [Classes]
 class: Tipo de dado composto por membros, por sua vez, seus membros são propiedades que são as variáveis da classe e metódos que são as funções, são as funcionalidades da classe.
 
-[Modificador de Classe]
+- Classes do tipo static não permitem a criação de construtores.
+- A partir do momento que você cria uma classe static, todos os seus membros também deveram ser do tipo static.
+
 public: Pública, sem restrição de visualização.
 abstract: Class-Base para outras classes, não podem ser instanciados  objetos desta classe.
 sealed: Classe não pode ser herdada.
@@ -117,3 +120,8 @@ abstract: Os metódos não tem implementação somente os cabeçalhos
 sealed: O metódo não pode ser redefinido.
 virtual: O metódo pode ser redefinido em uma classe derivada.
 static: O metódo pode ser chamado mesmo sem a instanciação de um objeto.
+
+[Metódo Construtor]
+
+- É um metódo que sempre será executado de começo, sempre que realizarmos uma instância da classe.
+~: Destrutor de classe.
