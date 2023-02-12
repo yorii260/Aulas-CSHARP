@@ -112,7 +112,6 @@ public: Pública, sem restrição de visualização.
 abstract: Class-Base para outras classes, não podem ser instanciados  objetos desta classe.
 sealed: Classe não pode ser herdada.
 static: Classe não permite a instanciação de objetos e seus membros devem ser static.
-
 [Especificador de Acesso]
 public: Sem restrição de acesso.
 private: Só podem ser acessado pela própia classe.
@@ -126,3 +125,12 @@ static: O metódo pode ser chamado mesmo sem a instanciação de um objeto.
 
 - É um metódo que sempre será executado de começo, sempre que realizarmos uma instância da classe.
 ~: Destrutor de classe.
+virtual: Metódo virtual.
+override: Sobescrever o metódo virtual.
+- Sempre que uma classe base for herdada, e o seu herdado for herdado por outra classe, a ordem de execução dos construtores é da classe base e depois seus derivados (herdados).
+
+[Metódos Virtuais]
+
+- Métodos virtuais são metódos que possuem o mesmo nome em classes diferentes
+uma classe que herda outra e tem um metódo que tem exatamente o mesmo nome da 
+sua classe base, porém esse metódo irá executar uma ação diferente.
