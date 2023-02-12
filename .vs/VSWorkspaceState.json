@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.projetos",
+    "\\02"
   ],
-  "SelectedNode": "\\C:\\Users\\yori0\\OneDrive\\Área de Trabalho\\C#",
+  "SelectedNode": "\\02\\02.csproj",
   "PreviewInSolutionExplorer": false
 }

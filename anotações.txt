@@ -40,6 +40,7 @@ bool: Variável de condição, true or false.
 +=(valor) = Atribuí um valor X á uma Variável ex: num+=10.
 (-=, *=, /=)
 this: Faz referência ao objeto, no caso a classe/metódo.
+?: If alternário. (teste?"":"")
 -----------------------------------------------------------------
 switch (teste) {bloco}: Realiza um teste utilizando cases.
 goto: Desvia para um lugar determinado pelo progamador, e executa a partir de onde o label foi indicado.

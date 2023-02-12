@@ -6,7 +6,10 @@ namespace Curso
     {
         static public void Main()
         {
-            Console.WriteLine("Olá mundo!");
+            Console.WriteLine("Olï¿½ mundo!");
         }
     }
 }
+
+
+// Explicando public vs private
