@@ -26,6 +26,16 @@ namespace Curso
             return rodas;
             
         }
+
+        public void setRodas(int rodas){
+            if(rodas<0){
+                this.rodas=0;
+            }else if (rodas>10){
+                this.rodas=10;
+            }else{
+                this.rodas=rodas;
+            }
+        }
     }
 
     class Carro:Veiculo{ // Herdou a classe base.
@@ -39,16 +49,36 @@ namespace Curso
             this.VelMax=VelMax;
         }
     }
+
+    class CarroDeLuxo:Carro{
+
+        public int pessoas;
+        public CarroDeLuxo():base("Limousine", "Verde", 350){
+            pessoas=6;
+            setRodas(5);
+        }
+    }
     
     public class Aula35{
         static void Main(){
             Carro c1 = new Carro(nome: "Supra",cor: "Preto", VelMax: 360);
+            CarroDeLuxo c2 = new CarroDeLuxo();
+
             Console.WriteLine("Nome: {0}\nCor: {1}\nRodas: {2}\nEstado: {3}\nVel. Máxima: {4}",
             c1.nome,
             c1.cor,
             c1.getRodas(),
             c1.getStatus(),
             c1.VelMax);
+
+            Console.WriteLine("\nNome: {0}\nCor: {1}\nRodas: {2}\nEstado: {3}\nVel. Máxima: {4}\nPessoas: {5}",
+            c2.nome,
+            c2.cor,
+            c2.getRodas(),
+            c2.getStatus(),
+            c2.VelMax,
+            c2.pessoas
+            );
         }
     }
 }
