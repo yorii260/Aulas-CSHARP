@@ -73,7 +73,6 @@ namespace Advinhar
             }
             Console.Clear();
             Console.WriteLine("Baah, que triste, suas rodadas acabaram, tente novamente!");
-
         }
     }
 }
